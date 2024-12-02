@@ -3,7 +3,7 @@
 
 /* ----- VARIABLES ----- */
 :root{
-    --body-color: hwb(328 58% 21%);
+    --body-color: #c994b0;
     --color-white: rgb(255, 255, 255);
 
     --text-color-second: rgb(68, 68, 68);
@@ -346,9 +346,9 @@ footer{
     content: "";
     position: absolute;
     bottom: -100%;
-    background: var(--second-color);
+    background: #c994b0;
     width: 100%;
-    height: 100%;
+    height: 20%;
     transition: .4s;
     z-index: 1;
 }
