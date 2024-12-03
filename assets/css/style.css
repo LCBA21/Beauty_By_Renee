@@ -258,6 +258,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 100px 10vw;
+   
 }
 .hero-text{
     width: 62%;
@@ -277,9 +278,8 @@ nav{
 /*picture/Logo*/
 .hero-logo{
     margin: auto 0;
-    width: 380px;
+    width: 414px;
     height: 380px;
-    
     overflow: hidden;
     animation: imgFloat 7s ease-in-out infinite;
 }
