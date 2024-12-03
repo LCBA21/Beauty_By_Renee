@@ -48,10 +48,10 @@ function myMenuFunction() {
   sr.reveal('.hero-logo', { delay: 300 });
   
   /* -- CATEGORIES SECTION -- */
-  sr.reveal('.category-grid', { delay: 200 });
+  sr.reveal('.category-grid', { delay: 100 });
   
   /* -- PRODUCTS SECTION -- */
-  sr.reveal('.product-grid', { delay: 300 });
+  // sr.reveal('.project-box', { delay: 300 });
   
   /* ----- CHANGE ACTIVE LINK ----- */
   const sections = document.querySelectorAll('section[id]');

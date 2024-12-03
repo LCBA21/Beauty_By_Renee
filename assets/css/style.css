@@ -1,5 +1,25 @@
 /* ----- POPPINS FONT Link ----- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* Import Jacques François font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+
+body {
+    font-family: 'Jacques François', serif; /* Apply the font globally */
+}
+
+h1, h2, h3 {
+    font-family: 'Jacques François', serif; /* Apply the font to headers */
+}
+
+.project-box .product-name {
+    font-family: 'Jacques François', serif; /* Apply the font to product names */
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--text-color-dark);
+    text-align: center;
+    word-wrap: break-word;
+}
 
 /* ----- VARIABLES ----- */
 :root{
@@ -52,11 +72,13 @@ html{
     padding: 12px 20px;
     background: #efefef;
     border: none;
-    border-radius: 10px;
+    border-radius: 0px;
     cursor: pointer;
     transition: .4s;
     align-items: center;
-   
+    width: auto;
+    margin-top: 20px;
+
 }
 .btn>i{
     margin-left: 10px;
@@ -71,6 +93,89 @@ i{
     font-size: 16px;
 }
 
+/*-------- CART ICON ----------*/
+.cart-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    align-items:center;
+}
+
+.cart-svg {
+    width: 60%;
+    height: 60%;
+    fill: none;
+    stroke: black;
+    stroke-width: 2;
+    align-items:center;
+
+}
+
+/* cart-count {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: rgb(7, 248, 19);
+    color: white; */
+    /* font-size: 12px; Keep the text size readable */
+    /* font-weight: bold;
+    border-radius: 50%; */
+    /* padding: 1px 4px; Reduced padding for a smaller background */
+    /* transform: translate(50%, -50%); */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+    /* min-width: 16px; Ensures a round shape even for single-digit numbers */
+    /* height: 16px; Matches the height for consistency */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+/* } */
+
+/*------- SEARCH BAR CSS ---------- */
+
+
+
+.search-container {
+    display: flex;
+    align-items:center;
+    background-color: #c994b0;
+    border: 1px solid #c994b0;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-box2{
+ background-color: transparent;
+ border:1px solid;
+ display: flex
+ 
+;
+
+}
+.search-box {
+    border:black;
+    outline: none;
+    padding: 10px;
+    border-color: black;
+    font-size: 16px;
+    flex: 1;
+    border-radius: 0px 0 0 0px;
+}
+
+.search-button {
+    background-color: transparent;
+    border: black;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
 /* ------- BASE -------- */
 body{
     background: var(--body-color);
@@ -192,6 +297,7 @@ nav{
     padding: 100px 4vw;
     text-align: center;
     background-color: #ffffff;
+    margin-bottom: -5%;
 }
 .categories h2{
     font-size: 30px;
@@ -200,6 +306,7 @@ nav{
 .category-grid{
     display: flex;
     justify-content: space-around;
+
 }
 .category{
     background-color: var(--first-color);
@@ -315,31 +422,54 @@ footer{
 }
 
 /* ----- S BOX ----- */
-.project-container{
+.project-container { 
     display: flex;
     width: 100%;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
+    font-family: 'Jacques François', serif; /* Apply the font to headers */
+    margin-bottom: 00px;
 }
-.project-box{
+h5{
+    font-family: 'Jacques François', serif; /* Apply the font to headers */
+
+}
+
+.project-box {
     position: relative;
-    display:contents;
+    display: flex; /* Changed to flex for better alignment of content */
+    flex-direction: column; /* Ensures vertical stacking of image and text */
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 30%;
-    height: 250px;
+    width: 22%;
+    height:auto; /* Adjust height to fit content */
     background: var(--color-white);
-    border-radius: 0px;
+    border-radius: 0px; /* Optional: rounded corners */
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
+    padding: 10px; /* Adds spacing inside the box */
+    text-align: center;
+    margin-top: 0px;
 }
-.project-box>i{
-    font-size: 50px;
-    color: #00B5E7;
-    margin-bottom: 25px;
+
+.project-box img {
+    width: 100%; /* Ensures the image fits inside the box */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 0px; /* Matches the box's rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for images */
 }
+
+.project-box .product-name {
+    margin-top: 10px; /* Adds space between the image and text */
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--text-color-dark); /* Ensure it matches your theme */
+    text-align: center;
+    word-wrap: break-word; /* Prevents overflow for long product names */
+}
+
+
 .project-box label{
     font-size: 15px;
     color: #777;
