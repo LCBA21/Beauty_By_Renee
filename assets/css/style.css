@@ -260,7 +260,8 @@ nav{
     padding: 100px 10vw;
 }
 .hero-text{
-    width: 50%;
+    width: 62%;
+    align-items: center;
 }
 .hero-text h1{
     font-size: 40px;
@@ -627,17 +628,41 @@ h5{
     .social_icons{
         margin-top: 2em;
     }
-    .featured-image{
-        order: 1;
+
+
+    .hero {
+        display: flex;
+        flex-direction: column; /* Stack the elements vertically */
+        align-items: center; /* Center the elements */
         justify-content: center;
-        min-height: 150px;
-        width: 100%;
-        margin-top: 65px;
+        text-align: center; /* Align text to center for smaller screens */
+    }
+
+    .hero-logo {
+        order: -1; /* Move the logo to the top */
+        margin-bottom: 20px; /* Add spacing between the logo and the text */
+    }
+
+    .hero-text {
+        order: 1; /* Keep the text below the logo */
+    }
+
+    .hero-logo .image img {
+        width: 387px; /* Adjust the logo size for responsiveness */
+        height: auto;
+        position: absolute; /* Position the image absolutely within its parent */
+        top: -3%; /* Move it 50% down the parent's height */
+        left: 0%; /* Move it 50% across the parent's width */
+        transform: translate(-0%, -0%); /* Adjust for the image's own dimensions */
+      
     }
     .image, .image img{
         width: 150px;
         height: 150px;
     }
+
+
+    
     .row{
         display: flex;
         flex-direction: column;
@@ -656,8 +681,10 @@ h5{
         justify-content: center;
     }
     .project-box{
-         width: 80%;
+        width: 80%;
     }
+
+}
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
 @media only screen and (max-width: 540px){
@@ -673,4 +700,4 @@ h5{
     .input-field{
         width: 100%;
     }
-}}
+}
