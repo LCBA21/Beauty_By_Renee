@@ -35,6 +35,52 @@ h1, h2, h3 {
     --second-color: rgb(0, 0, 0);
     --third-color: rgb(192, 166, 49);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
+
+
+
+
+    
+    --hoockers-green_20: hsl(148, 20%, 38%, 0.2);
+    --pale-spring-bud: hsl(60, 68%, 85%);
+    --hoockers-green: hsl(148, 20%, 38%);
+    --spanish-gray: hsl(0, 0%, 61%);
+    --light-gray: hsl(0, 0%, 80%);
+    --cultured-1: hsl(0, 0%, 97%);
+    --cultured-2: hsl(60, 6%, 93%);
+    --gray-web: hsl(0, 0%, 49%);
+    --white_30: hsl(0, 0%, 100%, 0.3);
+    --black_70: hsla(0, 0%, 0%, 0.7);
+    --black_50: hsla(0, 0%, 0%, 0.5);
+    --black_15: hsla(0, 0%, 0%, 0.15);
+    --black_10: hsla(0, 0%, 0%, 0.1);
+    --black_5: hsla(0, 0%, 0%, 0.05);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --gradient: linear-gradient(to right, transparent 50%, var(--white_30) 100%);
+    --ff-urbanist: 'Urbanist', sans-serif;
+    --fs-1: 4.8rem;
+    --fs-2: 4rem;
+    --fs-3: 3.4rem;
+    --fs-4: 2.4rem;
+    --fs-5: 2rem;
+    --fs-6: 1.8rem;
+    --fs-7: 1.5rem;
+    --fs-8: 1.4rem;
+    --fs-9: 1.3rem;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+    --section-padding: 35px;
+    --shadow-1: 0 8px 16px var(--black_15);
+    --shadow-2: 0 4px 10px var(--black_5);
+    --radius-3: 3px;
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+    --transition-3: 1s ease;
+    --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
 }
 
 /* ----- BASE ----- */
@@ -78,6 +124,7 @@ html{
     align-items: center;
     width: auto;
     margin-top: 47px;
+    margin-bottom: 47px;
 
 }
 .btn>i{
@@ -461,6 +508,12 @@ h5{
     padding: 10px; /* Adds spacing inside the box */
     text-align: center;
     margin-top: 0px;
+    
+    
+}
+.project-box:hover.project-box{
+    transform: scale(1.1); /* Slight zoom-in effect */
+    transition: var(--transition-2);
 }
 
 .project-box img {
@@ -468,7 +521,10 @@ h5{
     height: auto; /* Maintains aspect ratio */
     border-radius: 0px; /* Matches the box's rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for images */
+    
 }
+
+
 
 .project-box .product-name {
     margin-top: 10px; /* Adds space between the image and text */
@@ -744,7 +800,8 @@ h5{
         background-color: #ffffff;
         margin-bottom: -5%;
         margin-left: 0px;
-        margin-right: -26px;
+        margin-right: -28px;
+        
     }
 }
 
