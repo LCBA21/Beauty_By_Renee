@@ -501,8 +501,7 @@ footer{
     gap: 20px;
     flex-wrap:wrap;
     font-family: 'Jacques François', serif; /* Apply the font to headers */
-    margin-bottom: 7px;
-    margin-top: 20%;
+    margin-bottom: 00px;
 }
 h5{
     font-family: 'Jacques François', serif; /* Apply the font to headers */
