@@ -522,10 +522,10 @@ h5{
     
     
 }
-.project-box:hover.project-box{
-    transform: scale(1.1); /* Slight zoom-in effect */
+/* .project-box:hover.project-box{
+    transform: scale(1.1); 
     transition: var(--transition-2);
-}
+} */
 
 
 .project-box img {
