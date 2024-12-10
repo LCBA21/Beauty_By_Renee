@@ -529,7 +529,7 @@ h5{
   }
 
   .social-icons {
-    display: flex;
+    display:ruby-text;
     gap: 10px;
   }
 
@@ -1054,7 +1054,7 @@ h5{
         margin-left: 60%;
         margin-right: -50%;
       
-        
+
     }
 
     .rating-score{
