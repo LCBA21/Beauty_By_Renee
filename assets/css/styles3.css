@@ -1046,8 +1046,8 @@ h5{
     }
     
     .rating-bars {
-        margin-left: 60%;
-        margin-right: -50%;
+        margin-left: 44%;
+        margin-right: -64%;
     }
 
     .review-list{
@@ -1079,6 +1079,7 @@ h5{
     }
    
 }
+
     
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 

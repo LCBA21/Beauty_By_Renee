@@ -30,6 +30,43 @@ h5{
     word-wrap: break-word;
 }
 
+/* Profile Button Styling */
+.profile-btn {
+    position: relative;
+    right: -13%;
+    background-color: #c994b0;
+    color: rgb(0, 0, 0);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    margin-right: 20px; /* Space between buttons */
+  }
+  
+  
+  /* Cart Button Styling */
+  .cart-btn {
+    margin-left: 7%;
+    background-color: #c994b0;
+    color: rgb(0, 0, 0);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Cart Button Hover Effect */
+
+  
+  
+  
+
 /* ----- VARIABLES ----- */
 :root{
     --body-color: #c994b0;
@@ -745,11 +782,11 @@ h5{
         height: 150px;
     }
 
-.project-box{
+    .project-box{
     display: flex;
     top: 0%;
     left: 0%;
-}
+    }
     
 
     .row{
