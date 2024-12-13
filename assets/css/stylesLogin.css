@@ -225,10 +225,10 @@ body {
 @media (max-width: 768px) {
   .flipper .front {
     top: -23%;
-    width: 71%;
+    width: 100%;
     height: auto;
     padding: 15px;
-    left: 10%;
+    left: -5%;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 }
