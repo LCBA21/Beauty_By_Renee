@@ -220,3 +220,14 @@ body {
     text-decoration: none;
     color: black;
   }
+
+  @media (max-width: 768px) {
+    .flipper .front {
+      top: -23%;
+      width: 90%;
+      height:fit-content;
+      padding: 15px;
+      left: 0%;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
