@@ -49,6 +49,7 @@ h5{
   
   /* Cart Button Styling */
   .cart-btn {
+    position: relative;
     margin-left: 7%;
     background-color: #c994b0;
     color: rgb(0, 0, 0);
