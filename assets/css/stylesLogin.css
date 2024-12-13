@@ -36,7 +36,7 @@ body {
     top: -27%;
     margin-bottom: 0%;
     left: 0%;
-    position: relative;
+    position:absolute;
     width: 90%;
     height: 130%;
     backface-visibility: hidden;
@@ -226,7 +226,7 @@ body {
   .flipper .front {
     top: -23%;
     width: 90%;
-    height: auto;
+    height:fit-content;
     padding: 15px;
     left: 0%;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
