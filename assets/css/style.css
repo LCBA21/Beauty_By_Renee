@@ -32,8 +32,6 @@ h5{
 
 /* Profile Button Styling */
 .profile-btn {
-    position: relative;
-    right: -13%;
     background-color: #c994b0;
     color: rgb(0, 0, 0);
     border: none;
@@ -43,14 +41,13 @@ h5{
     cursor: pointer;
     font-size: 20px;
     transition: background-color 0.3s;
-    margin-right: 20px; /* Space between buttons */
-  }
-  
-  
-  /* Cart Button Styling */
-  .cart-btn {
-    position: relative;
-    margin-left: 7%;
+    margin-right: -16px; /* Space between buttons */
+    padding: 10px 15px;
+    border-radius: 5px; /* Optional for a rounded look */
+}
+
+/* Cart Button Styling */
+.cart-btn {
     background-color: #c994b0;
     color: rgb(0, 0, 0);
     border: none;
@@ -60,7 +57,10 @@ h5{
     cursor: pointer;
     font-size: 20px;
     transition: background-color 0.3s;
-  }
+    padding: 10px 15px;
+    border-radius: 5px; /* Optional for a rounded look */
+}
+
   
   /* Cart Button Hover Effect */
 

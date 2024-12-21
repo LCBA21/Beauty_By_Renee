@@ -78,7 +78,13 @@
                   <div class="col-12 wishlist-btn">
                     <div class="wishlist-container">
                     <button id="wishlist" class="wishlist-button"><i class="uil uil-heart"></i></button>
-                    <button class="add-to-cart"><i class="uil uil-shopping-cart-alt cart"></i>Add to Cart</button>
+                    <a class="add-to-cart" id="addToCartButton">
+                      <i class="uil uil-shopping-cart-alt cart"></i>Add to Cart
+                  </a>
+                  <div id="cartNotification" style="display: none; color: green; margin-top: 10px;">
+                      Item added to cart!
+                  </div>
+                  <span id="cartCount">0</span>
                     </div>
                 </div>
                 </div>

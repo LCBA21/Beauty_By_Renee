@@ -71,8 +71,41 @@ function myMenuFunction() {
       }
     });
   }
-  
+ 
 
+
+// Select the Add to Cart button
+const addToCartButton = document.getElementById('addToCartButton');
+
+// Select the cart notification (if any)
+const cartNotification = document.getElementById('cartNotification');
+
+// Function to handle the Add to Cart action
+addToCartButton.addEventListener('click', () => {
+    // Example: Display a notification
+    cartNotification.style.display = 'block';
+
+    // Hide the notification after 2 seconds
+    setTimeout(() => {
+        cartNotification.style.display = 'none';
+    }, 2000);
+
+    // Optionally, you can update a cart counter or send the item to a backend
+    console.log("Item added to cart!");
+});
+
+let cartCount = 0;
+const cartCountElement = document.getElementById('cartCount');
+
+addToCartButton.addEventListener('click', () => {
+    cartCount++;
+    cartCountElement.textContent = cartCount; // Update cart count
+    cartNotification.style.display = 'block';
+    setTimeout(() => {
+        cartNotification.style.display = 'none';
+    }, 2000);
+    console.log("Item added to cart!");
+});
 
 
 
