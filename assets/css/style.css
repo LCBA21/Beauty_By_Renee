@@ -41,7 +41,7 @@ h5{
     cursor: pointer;
     font-size: 20px;
     transition: background-color 0.3s;
-    margin-right: -16px; /* Space between buttons */
+    margin-right: -18px; /* Space between buttons */
     padding: 10px 15px;
     border-radius: 5px; /* Optional for a rounded look */
 }
